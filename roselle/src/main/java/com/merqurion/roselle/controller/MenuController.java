@@ -1,0 +1,57 @@
+package com.merqurion.roselle.controller;
+
+import com.merqurion.roselle.dao.MenuDao;
+import com.merqurion.roselle.model.Menu;
+import java.util.List;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+@Controller
+public class MenuController {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(MenuController.class);
+    
+    @Autowired
+    private MenuDao menuDao;
+    
+    @RequestMapping(value = "/menu", method = RequestMethod.GET)
+    public String index(Model model) {
+        List<Menu> menus = menuDao.all();
+        
+        model.addAttribute("menus", menus);
+        
+        return "menu/index";
+    }
+    
+    @RequestMapping(value = "/menu/add", method = RequestMethod.GET)
+    public String add(Model model) {
+        Menu menu = new Menu();
+        model.addAttribute("menu", menu);
+        return "menu/add";
+    }
+    
+    @RequestMapping(value = "/menu/add", method = RequestMethod.POST)
+    public String create(Model model, Menu menu) {
+        menuDao.save(menu);
+        return "redirect:/menu";
+    }
+    
+    @RequestMapping(value = "/menu/{id}/edit", method = RequestMethod.GET)
+    public String edit(@PathVariable Integer id, Model model) {
+        Menu menu = menuDao.find(id);
+        model.addAttribute(menu);
+        return "menu/edit";
+    }
+    
+    @RequestMapping(value = "/menu/{id}/edit", method = RequestMethod.POST)
+    public String update(Model model, @PathVariable Integer id, Menu menu) {
+        menuDao.update(menu);
+        return "redirect:/menu";
+    }
+}

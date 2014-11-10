@@ -1,0 +1,7 @@
+INDEX VERSION 1.127
+E:\Data\My Favorites\xxx\Best Collections\roselle-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3079092349.index
+\roselle\src\main\java
+E:\Data\My Favorites\xxx\Best Collections\roselle-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2638275658.index
+\roselle\src\main\java
+E:\Data\My Favorites\xxx\Best Collections\roselle-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2561400648.index
+\roselle\src\main\java

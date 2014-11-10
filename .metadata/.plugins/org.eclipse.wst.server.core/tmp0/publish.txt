@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Mon Nov 10 09:17:29 ICT 2014
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\edbert\\.m2\\repository\\org\\springframework\\spring-web\\3.2.11.RELEASE\\spring-web-3.2.11.RELEASE.jar=D\:\\sts-bundle\\pivotal-tc-server-developer-3.0.0.RELEASE\\base-instance\\wtpwebapps\\roselle\\WEB-INF\\lib\\spring-web-3.2.11.RELEASE.jar
+org.eclipse.jst.jee.server\:roselle=D\:\\sts-bundle\\pivotal-tc-server-developer-3.0.0.RELEASE\\base-instance\\wtpwebapps\\roselle

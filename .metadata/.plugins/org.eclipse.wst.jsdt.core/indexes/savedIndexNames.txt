@@ -1,0 +1,8 @@
+INDEX VERSION 1.3+E:\Data\My Favorites\xxx\Best Collections\roselle-workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2561400648.index
+2081181129.index
+3981298462.index
+2800194652.index
+3584828776.index
+1665962613.index
+3794361211.index
